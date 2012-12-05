@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="js/right.js"></script>
+    <script type="text/javascript" src="js/jaws.js"></script>
+    <script type="text/javascript" src="js/graph.js"></script>
+    <script type="text/javascript" src="js/astar.js"></script>
+    <script type="text/javascript" src="js/gamedata.js?5"></script>
+    <script type="text/javascript" src="js/gamelogic.js?5"></script>
+    <script type="text/javascript" src="js/game.js?5"></script>
+    <title>td</title>
+    <style>
+      body, html {
+        margin:0; padding: 0; overflow:hidden;
+        font-size:20px;
+        background: #333;
+      }
+      canvas {
+        display: block;
+        border:thick solid #555;
+        margin:50px auto;
+        color:#888;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      jaws.init({width:TD.width, height:TD.height})
+      jaws.setupInput()
+      jaws.switchGameState(preLoadingState)
+    </script>
+  </body>
+</html>
